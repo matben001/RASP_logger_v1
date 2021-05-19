@@ -31,7 +31,7 @@ def main():
     OLATB = 0x15  # Output latches B
 
     i2cbus = SMBus(1)  # Create a new I2C bus
-    i2caddress = 2x42  # Address of MCP23017 device
+    i2caddress = 0x42  # Address of MCP23017 device
 
     i2cbus.write_byte_data(i2caddress, IOCON, 0x02)  # Update configuration register
 
